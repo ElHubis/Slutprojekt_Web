@@ -1,0 +1,104 @@
+:root{
+    --accent: #f7f2d9;
+    --cwhite: #f2f2f7;
+    --cblack: #16151d;
+}
+
+
+body{
+    margin: 0;
+    background-color: var(--cblack);
+    overflow-x: hidden;
+}
+
+.header{
+    text-align: center;
+    color: var(--accent);
+    
+}
+
+.header h1{
+    font-size: 20rem;
+    margin: 0;
+    color: var(--cwhite);
+}
+
+.header h2{
+    font-size: 8rem;
+    margin: 0;
+    margin-bottom: 12rem;
+    font-style: italic;
+}
+
+.tshirt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(60%);
+    transition: transform 0.4s ease-out;
+}
+
+.tshirt img{
+    width: 20%;
+}
+
+.tshirt:nth-of-type(odd){
+    transform: translateX(-60%);
+}
+
+.tshirt.show{
+    transform: translateX(0);
+}
+
+.vilka{
+    width: 70rem;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
+.vilka h1{
+    width: fit-content;
+    font-size: 4rem;
+    margin: 0;
+    margin-top: 3rem;
+    float:left;
+    color: var(--accent);
+}
+
+.vilka p{
+    width: 30rem;
+    font-size: 2rem;
+    margin: 0;
+    float: left;
+    color: var(--cwhite);
+}
+
+.vilka img{
+    float: right;
+    width: 30rem;
+    filter: invert();
+}
+
+.vilka_element{
+    opacity: 0;
+    transform: translateX(-300%);
+    transition: all 1s ease;
+}
+
+.move{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.vilka_element:nth-child(1){
+    transition-delay: 400ms;
+}
+
+.vilka_element:nth-child(3){
+    transition-delay: 200ms;
+}
+
+text_anim span{ 
+    
+    margin-left: 12rem;
+}
