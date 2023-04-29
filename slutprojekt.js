@@ -23,7 +23,7 @@ const vilka = document.querySelectorAll('.vilka_element')
 window.addEventListener('scroll', moveVilka)
 
 function moveVilka(){
-    const vilkaTrigger = window.innerHeight;
+    const vilkaTrigger = window.innerHeight/1.5;
 
     vilka.forEach(vilka =>{
         const vilkaTop = vilka.getBoundingClientRect().top;
@@ -34,6 +34,26 @@ function moveVilka(){
     
         else{
             vilka.classList.remove('move')
+        }
+    })
+}
+
+const varför = document.querySelectorAll('.varför_anim')
+
+window.addEventListener('scroll', moveVarför)
+
+function moveVarför(){
+    const varförTrigger = window.innerHeight;
+
+    varför.forEach(varför =>{
+        const varförTop = varför.getBoundingClientRect().top;
+
+        if(varförTop < varförTrigger){
+            varför.classList.add('move_up');
+        } 
+    
+        else{
+            varför.classList.remove('move_up')
         }
     })
 }

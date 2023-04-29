@@ -118,7 +118,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.varför_anim{
     transform: translateY(30%);
+    transition: all 0.5s ease;
+}
+
+.move_up{
+    transform: translateY(0);
 }
 
 .bild_sektion img{
@@ -126,7 +134,9 @@ body{
 }
 
 .bild_sektion h1{
-    color:var(--accent);
+    color: var(--accent);
+    width: 300px;
+    text-align: center;
 }
 
 .gravid{
@@ -134,15 +144,19 @@ body{
     color: var(--cwhite);
 }
 
+
+
 .gymmar{
     align-self: center;
     color: var(--cwhite);
+    margin-top: -20rem;
 }
 
 .chillar{
     margin-right: 7rem;
     align-self: flex-end;
     color: var(--cwhite);
+    margin-top: -20rem;
 }
 
 .move_up{
