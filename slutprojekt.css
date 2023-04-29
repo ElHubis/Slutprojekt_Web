@@ -77,6 +77,7 @@ body{
     float: right;
     width: 30rem;
     filter: invert();
+    user-select:none;
 }
 
 .vilka_element{
@@ -98,7 +99,53 @@ body{
     transition-delay: 200ms;
 }
 
-text_anim span{ 
-    
-    margin-left: 12rem;
+.varför_rish{
+    margin-top: 40rem;
+    text-align: center;
 }
+
+.varför_rish h1{
+    font-size: 4rem;
+    color: var(--accent);
+}
+
+.varför_rish p{
+    font-size: 2rem;
+    color: var(--cwhite);
+}
+
+.bild_sektion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(30%);
+}
+
+.bild_sektion img{
+    width: 300px;
+}
+
+.bild_sektion h1{
+    color:var(--accent);
+}
+
+.gravid{
+    margin-left: 7rem;
+    color: var(--cwhite);
+}
+
+.gymmar{
+    align-self: center;
+    color: var(--cwhite);
+}
+
+.chillar{
+    margin-right: 7rem;
+    align-self: flex-end;
+    color: var(--cwhite);
+}
+
+.move_up{
+    transform: translateY(0);
+}
+
