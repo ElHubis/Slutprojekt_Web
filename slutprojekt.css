@@ -144,8 +144,6 @@ body{
     color: var(--cwhite);
 }
 
-
-
 .gymmar{
     align-self: center;
     color: var(--cwhite);
@@ -163,3 +161,11 @@ body{
     transform: translateY(0);
 }
 
+.för_dig{
+    text-align: center;
+}
+
+.för_dig p{
+    font-size: 2rem;
+    color: var(--cwhite);
+}
