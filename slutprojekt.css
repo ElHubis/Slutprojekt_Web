@@ -169,3 +169,7 @@ body{
     font-size: 2rem;
     color: var(--cwhite);
 }
+
+.image_carousel img{
+    width: 300px;
+}
