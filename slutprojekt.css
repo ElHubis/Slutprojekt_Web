@@ -39,7 +39,7 @@ body{
 }
 
 .tshirt img{
-    width: 20%;
+    width: 20rem;
 }
 
 .tshirt:nth-of-type(odd){
@@ -170,6 +170,22 @@ body{
     color: var(--cwhite);
 }
 
+.image_carousel{
+    display: flex;
+    margin-top: 5rem;
+    width: 3600px;
+    animation: auto_scroll 15s linear infinite;
+}
+
 .image_carousel img{
     width: 300px;
+}
+
+@keyframes auto_scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1800px);
+    }
 }

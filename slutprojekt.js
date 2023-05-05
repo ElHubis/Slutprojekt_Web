@@ -57,5 +57,3 @@ function moveVarför(){
         }
     })
 }
-
-const carouselImage = document.querySelectorAll('')
